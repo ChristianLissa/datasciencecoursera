@@ -3,7 +3,7 @@
 ### Explanation of the code
 The R script "run_analysis.R" is performing the following tasks in the given order:
 - Download and unzip the experimental data from the source URL.
- - Read the raw data sets (trainSub, trainX, trainY, testSub, testX, testY, activityLabels and features).
+- Read the raw data sets (trainSub, trainX, trainY, testSub, testX, testY, activityLabels and features).
 - Merge the raw data sets (trainSub, trainX, trainY, testSub, testX, testY).
 - Name the data sets.
 - Replace the activityID in the data set (trainY + testY) by the activityName from the activeLabels data set.
@@ -16,10 +16,13 @@ The R script "run_analysis.R" is performing the following tasks in the given ord
 
 ### Variables description
 The first two variables included in the output file are:
-  - subject_id - The participant number
-  - activityName - The name of the activity that the participant performed
+  - subject_id 		The participant number
+  - activityName 	The name of the activity that the participant performed
+
 The following columns are a subset from the original data. A detailed description of the variables can be found in the "features_info.txt" filewhich is included in the [data file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
-The following variables are included in the output file 
+
+The following variables are included in the output file: 
+
   - tBodyAcc_mean_X
   - tBodyAcc_mean_Y
   - tBodyAcc_mean_Z
